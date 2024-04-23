@@ -96,6 +96,41 @@ H. '3' - undefined
 Output: `NaN`
 Reason: `undefined` cannot be mapped to a numeric value, so we get `NaN` which means not a number. 
 
-# 14. 
+# 14. Comparison
 
+A.‘2’ > 1
+
+Output: `true`
+Reason: This is a comparison of two different types so they get converted to numeric values, and the numeric 2 is > 1, so true.
+
+B. ‘2’ < ‘12’
+
+Output: `false`
+Reason: This is a string and string comparison so they remain as strings, and the first character `2` is not lexicographically smaller than `1`, so we know it to be `false` immediately
+
+C. 2 == ‘2’
+
+Output: `true`
+Reason: `'2'` gets converted to a numeric 2, and so we are saying numeric 2 is equal to numeric 2 which is true.
+
+D. 2 === ‘2’
+
+Output: `false`
+Reason: The `===` operator performs an equality check without a conversion, and these are different types so we get false.
+
+E. true == 2
+
+Output: `false`
+Reason: `true` gets converted to its numeric equivalent numeric value 1, and numeric 1 does not equal numeric 2 so we get false.
+
+F. true === Boolean(2)
+
+Output: `true`
+Reason: `Boolean(2)` gets converted to `true` because it is a "non-empty value", and boolean true does equal boolean true
+
+# 15. Explain the difference between the == and === operators.
+
+The difference between `==` and `===` is that `===` does an equality check without converting the type of the two operands at all. So if you're comparing two operands that are of different type, you will surely get false back. For example, `'2' === 2` returns false while `'2' == 2` returns true. 
+
+# 16. See file
 
