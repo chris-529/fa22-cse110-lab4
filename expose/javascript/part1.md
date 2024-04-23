@@ -22,4 +22,3 @@ Line 9 does not get printed, an error occurs due to the asignment of a `const` v
 
 Line 13 does not get printed either, an error occurs due to the asignment of a `const` variable (`result`). A const variable cannot be reassigned
 
-# Part 2
