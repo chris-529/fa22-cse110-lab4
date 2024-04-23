@@ -1,12 +1,12 @@
-# 1. ^^^ What will happen at line 12 and why? If the code causes an error, explain why. ^^^
+# 1. What will happen at line 12 and why? If the code causes an error, explain why. 
 
 Line 12 prints `3` because that is the value of `i` after the for loop ends (prices is a list with 3 elements). We have access to `i` still because we declared it with keyword `var`, so we can print it's value outside of the for-loop block scope.
 
-# 2. ^^^ What will happen at line 13 and why? If the code causes an error, explain why. ^^^
+# 2. What will happen at line 13 and why? If the code causes an error, explain why. 
 
 Line 13 prints `150`, because that is the last value it was assigned to inside of the for-loop. We did 0.5 * the last item in prices and assigned that value to `discountedPrice`. Again, we have access to `discountedPrice` because we defined it with `var`.
 
-# 3. ^^^ What will happen at line 14 and why? If the code causes an error, explain why. ^^^
+# 3. What will happen at line 14 and why? If the code causes an error, explain why.
 
 Line 14 prints `150` again, because we simply rounded down `discountedPrice` in the final loop iteration and it did not need any rounding, so it stayed at `150`. We have access to the `finalPrice` variable since it's inside of our block scope and defined with `var`.
 
@@ -42,7 +42,12 @@ At line 12, the console will print `3`, because we are accessing `const length` 
 
 This function will return the list `[50, 100, 150]`. This is because we passed in the list of `[100, 200, 300]`, a discount of `0.5` to the function as parameters, and multiplied each item in the original price list by the given discount. Then we add these new prices to a list to return.
 
-
+# 12. Given the above Object, write the notation for:
+Accessing the value of the name property in the student object: `student.name`
+Accessing the value of the Grad Year property in the student object `student['Grad Year']`
+Calling the function for the greeting property in the student object `student.greeting();`
+Accessing the name property of the object in the Favorite Teacher property in student `student['Favorite Teacher'].name`
+Access index zero in the array of the courseLoad property of the student object `student.courseLoad[0]`
 
 
 
