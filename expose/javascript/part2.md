@@ -134,3 +134,21 @@ The difference between `==` and `===` is that `===` does an equality check witho
 
 # 16. See file
 
+# 17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result?
+
+We will get the list `[2,4,6]` returned. This is because inside of `modifyArray` we call `doSomething` on each element in the list we pass in. `doSomething` simply multiplies a number by 2 and returns it. So we essentially multiply each element in our original list by 2 using a passed in function, `doSomething`, and add that newly modified number to `newArr`. Once we're done, we return `newArr`.
+
+# 18. See file
+
+#19. What is the output of the above code? (This should be in your part2.md)
+
+```
+1
+4
+3
+2
+```
+
+The 2 and 3 are staggered because of setTimeout which waits before executing given a parameter of time, and 2 had a longer timeout passed in than 3 so it came after 3.
+
+
