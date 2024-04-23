@@ -43,11 +43,59 @@ At line 12, the console will print `3`, because we are accessing `const length` 
 This function will return the list `[50, 100, 150]`. This is because we passed in the list of `[100, 200, 300]`, a discount of `0.5` to the function as parameters, and multiplied each item in the original price list by the given discount. Then we add these new prices to a list to return.
 
 # 12. Given the above Object, write the notation for:
+
 Accessing the value of the name property in the student object: `student.name`
+
 Accessing the value of the Grad Year property in the student object `student['Grad Year']`
+
 Calling the function for the greeting property in the student object `student.greeting();`
+
 Accessing the name property of the object in the Favorite Teacher property in student `student['Favorite Teacher'].name`
+
 Access index zero in the array of the courseLoad property of the student object `student.courseLoad[0]`
 
+# 13. Arithmetic
+
+A. ‘3’ + 2
+
+Output: `'32'`
+Reason: Integers map to their string representation, so we are appending the string `2` to `3` to get `32`
+
+B. ‘3’ - 2
+
+Output: 1
+Reason: We are performing subtraction, which is not really defined for strings, so the `'3'` string gets converted to an integer and then we perform `3 - 2 = 1`
+
+C. 3 + null
+
+Output: `3`
+Reason: `null` maps to `0` , so adding 0 to the number 3 will give 3
+
+D. ‘3’ + null
+
+Output: `'3null'`
+Reason: This time, we have a string `'3'` and add null to it. So null maps to a string, not a number, which means null maps to `'null'` and we perform stringwise addition
+
+E. true + 3
+
+Output: `4`
+Reason: Since we are performing addition on a number and a boolean, the boolean maps to it's numeric value (true = 1), and we add the two numbers to get 4
+
+F. false + null
+
+Output: `0`
+Reason: Both `false` and `null` map to the numeric value of `0`, so we perform `0 + 0 = 0`
+
+G. '3' + undefined
+
+Output: `'3undefined'`
+Reason: We are performing addition to a string `'3'` with `undefined` which maps to the string `'undefined'`, and the stringwise addition gives us the output
+
+H. '3' - undefined
+
+Output: `NaN`
+Reason: `undefined` cannot be mapped to a numeric value, so we get `NaN` which means not a number. 
+
+# 14. 
 
 
